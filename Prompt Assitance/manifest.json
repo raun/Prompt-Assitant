@@ -1,0 +1,10 @@
+{
+  "manifest_version": 2,
+  "name": "Prompt Assitant",
+  "version": "1.0",
+  "description": "A simple extension with a dropdown menu and a text field",
+  "browser_action": {
+    "default_icon": "icon.jpg",
+    "default_popup": "popup.html"
+  }
+}
