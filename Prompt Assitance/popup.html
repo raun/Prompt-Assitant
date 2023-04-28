@@ -2,18 +2,33 @@
 <html>
   <head>
     <title>Prompt Assitant</title>
-    <script src="popup.js"></script>
+    <link rel="stylesheet" type="text/css" href="popup.css" />
+    <script defer src="popup.js"></script>
   </head>
-  <body>
-    <h1>Select an option:</h1>
+  <body class="container">
+    <label for="option-selector">Type:</label>
     <select id="option-selector">
       <option value="blog-post">Blog Post</option>
       <option value="curriculum-module">Curriculum Module</option>
+      <option value="unit-test">Generate Unit Test</option>
     </select>
-    <br>
-    <br>
-    <label for="text-field">Enter text:</label>
-    <input type="text" id="text-field">
+
+    <div class="text-container">
+      <label id="text-field-label"></label>
+      <input type="text" id="text-field" />
+    </div>
+
+    <div class="button-container">
+      <!-- <button id="submit-button" class="submit-button">Submit</button> -->
+      <button id="submit-button" class="cool-submit-button">Submit</button>
+    </div>
+
+    <div class="prompt-container">
+      <label for="generated-prompt" id="result-title">
+        <strong>Results</strong>
+      </label>
+      <div class="generated-prompt" id="generated-prompt"></div>
+    </div>
   </body>
 </html>
 
